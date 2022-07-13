@@ -1,19 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import NavigationStack from "./src/navigation/NavigationStack";
 import LoginForm from "./src/components/LoginForm";
-import Greeting from "./src/components/Greeting"
+import Greeting from "./src/components/Greeting";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Curso React Native</Text>
-      {/* <Greeting />
-      <Greeting name="Dorelly Crisanto" />
-      <Greeting name="Roxana Crisanto" />
-      <Greeting name="Roncito" /> */}
-      <Greeting firstname="Dorelly" lastname="Crisanto Silupú" />
-      <LoginForm />
-    </View>
+    <NavigationContainer>
+      <NavigationStack />
+    </NavigationContainer>
+    
   );
 }
 
