@@ -5,12 +5,14 @@ import NavigationStack from "./src/navigation/NavigationStack";
 import NavigationTab from "./src/navigation/NavigationTab";
 import LoginForm from "./src/components/LoginForm";
 import Greeting from "./src/components/Greeting";
+import NavigationDrawer from './src/navigation/NavigationDrawer';
 
 export default function App() {
   return (
     <NavigationContainer>
       {/* <NavigationStack /> */}
-      <NavigationTab />
+      {/* <NavigationTab /> */}
+      <NavigationDrawer />
     </NavigationContainer>
     
   );
